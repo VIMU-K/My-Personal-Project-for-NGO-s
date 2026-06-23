@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>From Paper to Insight | Nonprofit Data Demo</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Chart.js library - lets us draw charts on canvas elements (bundled locally) -->
+  <script src="chart.umd.js"></script>
+</head>
+<body>
+
+  <!-- ============================================ -->
+  <!-- SECTION 1: HERO - the thesis statement        -->
+  <!-- ============================================ -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">A working demo for nonprofit data teams</p>
+      <h1>Every minute spent re-typing<br>is a minute not spent<br><span class="accent">with a family.</span></h1>
+      <p class="hero-sub">This is a live demo. Built by Vimukthi Habarakada.</p>
+      <a href="#demo" class="cta-button">See the problem &rarr;</a>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 2: BEFORE/AFTER DEMO                  -->
+  <!-- ============================================ -->
+  <section class="demo-section" id="demo">
+    <h2>The hidden cost of paper-first workflows</h2>
+    <p class="section-sub">Many program teams write session notes on paper, then re-type everything into Apricot afterward. Toggle below to see the difference.</p>
+
+    <div class="toggle-wrap">
+      <button class="toggle-btn active" data-mode="before">Current Process</button>
+      <button class="toggle-btn" data-mode="after">Optimized Process</button>
+    </div>
+
+    <div class="demo-stage" id="demoStage">
+      <!-- JS will swap content here based on toggle -->
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 3: DASHBOARD                          -->
+  <!-- ============================================ -->
+  <section class="dashboard-section" id="dashboard">
+    <h2>What clean data makes possible</h2>
+    <p class="section-sub">A sample leadership dashboard, built from demo data</p>
+
+    <div class="dashboard-grid" id="dashboardGrid">
+      <!-- JS will render stat cards + charts here -->
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 3.5: DEMOGRAPHICS / CLIENT INSIGHTS   -->
+  <!-- ============================================ -->
+  <section class="demo-insights-section" id="demographics">
+    <div class="demo-data-flag">⚠ Illustrative demo data only, not real client records</div>
+    <h2>Who We Serve: Client Insight Reporting</h2>
+    
+    <div class="demographics-grid" id="demographicsGrid">
+      <!-- JS will render demographic charts here -->
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 4: CLOSING / CONTACT                  -->
+  <!-- ============================================ -->
+  <section class="closing">
+    <h2>I'd love to build this for your team.</h2>
+    <p>This is a working sample of how I approach nonprofit data systems. Clear, practical, and built around the people doing the work.</p>
+    <p class="signature">Vimukthi Habarakada</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
